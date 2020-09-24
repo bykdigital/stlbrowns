@@ -1,0 +1,42 @@
+
+
+
+/* //////////// */
+/* Fonts */
+
+@font-face {
+
+	font-family: "Futura Bold";
+	src: url('#{$cdn}fonts/Futura-Bold.eot');
+	src: url('#{$cdn}fonts/Futura-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('#{$cdn}fonts/Futura-Bold.woff') format('woff'),
+		 url('#{$cdn}fonts/Futura-Bold.ttf')  format('truetype'),
+		 url('#{$cdn}fonts/Futura-Bold.svg#e6614ac1ffeb97962de474601fd3ce1d') format('svg');
+			 
+	font-style:   normal;
+	font-weight:  700;
+}
+
+@font-face {
+	font-family: "Brandon Grotesque Regular";
+	src: url('#{$cdn}fonts/BrandonGrotesque-Regular.eot');
+	src: url('#{$cdn}fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('#{$cdn}fonts/BrandonGrotesque-Regular.woff') format('woff'),
+		 url('#{$cdn}fonts/BrandonGrotesque-Regular.ttf')  format('truetype'),
+		 url('#{$cdn}fonts/BrandonGrotesque-Regular.svg#50bf5a2005a5412419d6a4b30314e68e') format('svg');
+			 
+	font-style:   normal;
+	font-weight:  400;
+}
+
+@font-face {
+	font-family: "Brandon Grotesque Blck";
+	src: url('#{$cdn}fonts/BrandonGrotesque-Black.eot');
+	src: url('#{$cdn}fonts/BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'),
+		 url('#{$cdn}fonts/BrandonGrotesque-Black.woff') format('woff'),
+		 url('#{$cdn}fonts/BrandonGrotesque-Black.ttf')  format('truetype'),
+		 url('#{$cdn}fonts/BrandonGrotesque-Black.svg#50bf5a2005a5412419d6a4b30314e68e') format('svg');
+			 
+	font-style:   normal;
+	font-weight:  400;
+}

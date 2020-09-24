@@ -1,0 +1,43 @@
+
+
+
+/* //////////// */
+/* Social List Object */
+
+#stage .social {
+
+	position: absolute;
+	right: 60px;
+	width: 19px;
+
+	ul {
+
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+
+			margin-top: 25px;
+			&:first-child { margin-top: 0; }
+		}
+
+		li, a {
+
+			display: block;
+			width: 19px;
+			height: 19px;
+
+			text-indent: 100%;
+			overflow: hidden;
+
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.facebook { background-image: url(#{$cdn}images/bg-social-facebook.png); }
+		.twitter { background-image: url(#{$cdn}images/bg-social-twitter.png); }
+		.email { background-image: url(#{$cdn}images/bg-social-email.png); }
+	}
+}

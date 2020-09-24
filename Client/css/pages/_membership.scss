@@ -1,0 +1,37 @@
+
+
+
+/* //////////// */
+/* Membership page */
+
+.membership-view {
+
+	.page-title {
+
+		background: url(#{$cdn}images/header/membership.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.membership-levels {
+
+		max-width: 915px;
+		margin: 0 auto;
+
+		.grid {
+
+			margin-bottom: 55px;
+		}
+
+		.icon {
+
+			max-width: 220px;
+			padding-right: $base-spacing-unit;
+		}
+	}
+
+	.next-section {
+
+		background: url(#{$cdn}images/bg/bg-membership-next-section.jpg) no-repeat center;
+		background-size: cover;
+	}
+}

@@ -1,0 +1,27 @@
+
+
+
+/* //////////// */
+/* Typographic textures */
+
+%type-texture {
+	-webkit-mask-image: url(#{$cdn}images/type.png);
+	mask-image: url(#{$cdn}images/type.png);
+
+	// .retina & {
+
+	// 	-webkit-mask-image: none;
+	// 	mask-image: none;
+	// }
+}
+
+%type-texture-dark {
+	-webkit-mask-image: url(#{$cdn}images/type-dark.png);
+	mask-image: url(#{$cdn}images/type-dark.png);
+
+	// .retina & {
+
+	// 	-webkit-mask-image: none;
+	// 	mask-image: none;
+	// }
+}

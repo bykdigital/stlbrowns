@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+	h1= section
+		a.btn.btn-primary.pull-right(href="/admin/players/create").
+			<span class="glyphicon glyphicon-plus"></span> Create Player
+	hr
+	each player in players
+		div: ul.list-group
+			li.list-group-item
+				strong #{player.name}: #{player._id}
+				.btn-group.pull-right
+					a.btn.btn-default.btn-xs(href="/admin/players/edit/#{player.id}").
+						<span class="glyphicon glyphicon-pencil"></span> edit
+					a.btn.btn-default.btn-xs(href="/api/players/delete/#{player.id}").
+						<span class="glyphicon glyphicon-trash"></span> delete
+			li.list-group-item Created: #{player.createdAt}

@@ -1,0 +1,61 @@
+
+
+
+/* //////////// */
+/* Header object */
+
+.nav {
+
+	position: relative;
+	background: url(#{$cdn}fallback/bg-header.jpg) no-repeat center;
+	height: 177px;
+	text-align: center;
+	color: #fff;
+
+	h1 {
+
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+		font-size: 16px;
+		top: 50%;
+		left: 0;
+		margin: -1em 0 0 0;
+		height: 2em;
+		line-height: 1em;
+		letter-spacing: 1px;
+
+		@extend %type-texture;
+
+		span {
+
+			display: block;
+			font-size: 9px;
+		}
+	}
+
+	ul {
+
+		margin: 0;
+		padding: 20px 0 0 0;
+		width: 100%;
+		font-family: $brandon-black;
+		text-transform: uppercase;
+		font-size: 12px;
+
+		@extend %type-texture;
+
+		> li {
+
+			display: inline-block;
+			margin: 0 18px;
+			letter-spacing: 1px;
+
+			a.active,
+			a:hover {
+				
+				color: $orange;
+			}
+		}
+	}
+}

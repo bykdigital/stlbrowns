@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+	h1 Create a player
+	hr
+	form(role="form", method="post", action="/api/players/create")
+		.form-group
+			label Player Name
+			input.form-control(type="text", placeholder="Player Name", name="name")
+		button.btn.btn-primary(type="submit") Submit

@@ -1,0 +1,54 @@
+
+
+
+/* //////////// */
+/* Number ticker object */
+
+.ticker {
+
+	position: absolute;
+	z-index: 900;
+	top: 50%;
+	left: 10%;
+	width: 54px;
+	height: 86px;
+	border: 2px solid #fff;
+	margin-top: (86px / -2);
+
+	color: #fff;
+	text-align: center;
+	font-size: 34px;
+	line-height: 1;
+	padding: 8px 5px;
+	font-family: $tungsten;
+
+	@extend %type-texture;
+
+	@include media-query(small) {
+
+		left: 6.5%;
+	}
+
+	+ .ticker {
+
+		left: auto;
+		right: 10%;
+
+		@include media-query(small) {
+
+			right: 6.5%;
+		}
+	}
+
+	.row {
+
+		height: 1em;
+		overflow: hidden;
+		
+		span {
+			
+			width: 0.45em;
+			display: inline-block;
+		}
+	}
+}

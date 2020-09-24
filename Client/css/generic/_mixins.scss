@@ -1,0 +1,10 @@
+@mixin media-query($media-query) {
+
+    @if $media-query == small {
+        @media all and (max-width: 900px) { @content; }
+    } @else if $media-query == medium {
+    	@media all and (min-width: 901px) and (max-width: 1120px) { @content; }
+    } @else if $media-query == large {
+    	@media all and (min-width: 1121px) { @content; }
+    }
+}

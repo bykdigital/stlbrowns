@@ -1,0 +1,39 @@
+
+
+
+/* //////////// */
+/* Simple Grids */
+
+.grid {
+
+	display: flex;
+	width: 100%;
+}
+
+.grid-middle {
+
+	align-items: center;
+
+	> div {
+		-webkit-box-flex: 1;-webkit-flex: 1 1 50%;-ms-flex: 1 1 50%;flex: 1 1 50%
+	}
+}
+
+.grid-item,
+.grid > div,
+.grid > article,
+.grid > figure {
+
+	flex: 1 0;
+}
+
+.grid-padded {
+
+	margin-left: -50px;
+
+	.grid-item,
+	> div {
+
+		padding-left: 50px;
+	}
+}

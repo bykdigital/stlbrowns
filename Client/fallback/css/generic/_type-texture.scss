@@ -1,0 +1,15 @@
+
+
+
+/* //////////// */
+/* Typographic textures */
+
+%type-texture {
+	-webkit-mask-image: url(#{$cdn}fallback/textures/type.png);
+	mask-image: url(#{$cdn}fallback/textures/type.png);
+}
+
+%type-texture-dark {
+	-webkit-mask-image: url(#{$cdn}fallback/textures/type-dark.png);
+	mask-image: url(#{$cdn}fallback/textures/type-dark.png);
+}

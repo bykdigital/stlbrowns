@@ -1,0 +1,132 @@
+
+
+
+/* //////////// */
+/* Overlay object */
+
+.overlay {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 900;
+	display: none;
+	color: #dedbd9;
+
+	background: url(#{$cdn}images/bg-overlay.png) no-repeat center;
+	background-size: cover;
+
+	.hit-area {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 901;
+	}
+
+	.align {
+
+		@extend %vert-center;
+		width: 100%;
+		padding: 0 5%;
+	}
+
+	.inner {
+
+		max-width: 780px;
+		margin: 0 auto;
+		padding: $base-spacing-unit 45px;
+		position: relative;
+		border: 2px solid rgba(176, 174, 172, 0.5);
+
+		@extend %type-texture;
+	}
+
+	.url {
+
+		max-width: 780px;
+		margin: 0 auto;
+		padding: $half-spacing-unit 0;
+		font-size: .875em;
+		opacity: 0;
+		text-align: right;
+		font-style: italic;
+	}
+
+	hr {
+
+		border: solid rgba(176, 174, 172, 0.5);
+		border-width: 2px 0 0 0;
+		margin: 30px -45px 35px -45px;
+	}
+
+	.mouse-bug {
+
+		position: absolute;
+		z-index: 900;
+		top: 50%;
+		left: 50%;
+		width: 55px;
+		height: 48px;
+
+		margin-top: (55px / -2);
+		margin-left: 5px;
+
+		opacity: 0;
+		background: url(#{$cdn}images/bg-players-mouse-bug.png) no-repeat center;
+
+		@extend %type-texture;
+	}
+
+	.close {
+	
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		width: 35px;
+		height: 35px;
+		border: 2px solid $orange;
+		border-radius: 50%;
+		opacity: 0;
+		cursor: pointer;
+
+		text-align: center;
+		line-height: 28px;
+		font-size: 20px;
+		color: $orange;
+
+		@include media-query(small) {
+
+			line-height: 30px;
+		}
+
+		@include media-query(medium) {
+
+			line-height: 32px;
+		}
+	}
+
+	.stats {
+
+		> div {
+
+			flex: 1 1 auto;
+		}
+
+		p {
+
+			margin: 0;
+			font-style: italic;
+			color: $orange;
+		}
+	}
+
+	h2 {
+
+		color: $orange;
+	}
+}

@@ -1,0 +1,143 @@
+
+
+
+/* //////////// */
+/* History section page */
+/* Shared styles between each history section */
+
+$border-size: 20px;
+
+.history-section-view {
+
+	.border {
+
+		position: absolute;
+		z-index: 900;
+		background-color: $orange;
+		left: 0;
+		top: 0;
+		
+		transition: all .5s $easeOutCubic;
+		transform: translateZ(0);
+
+		&.dark { background-color: #281d19; }
+		&.light { background-color: #f7f4f2; }
+
+		&.border-top {
+			
+			width: 100%;
+			height: $border-size;
+		}
+
+		&.border-right {
+
+			left: auto;
+			right: 0;
+			width: $border-size;
+			height: 100%;
+		}
+
+		&.border-bottom {
+
+			top: auto;
+			bottom: 0;
+			width: 100%;
+			height: $border-size;
+		}
+
+		&.border-left {
+
+			width: $border-size;
+			height: 100%;
+		}
+	}
+
+	.inner {
+
+		position: relative;
+		z-index: 800;
+	}
+
+	section {
+
+		position: relative;
+		height: 1800px;
+		padding: 0 10%;
+
+		> img {
+			display: block;
+			width: 100%;
+		}
+
+		&.dark {
+
+			color: #dedbd9;
+
+			h2 { color: $orange; }
+		}
+
+		&.next-section {
+
+			padding-top: 145px;
+			height: 450px;
+			text-align: center;
+			color: #fff;
+
+			h2 {
+				margin-bottom: 0.75em;
+				padding-left: 1em; //- to account for arrow...
+				transition: all 0.35s $easeOutCubic;
+
+				span {
+					transition: all 0.35s 0 $easeOutCubic;	
+					color: $dark-brown;				
+				}
+			}
+
+			&:hover {
+
+				h2 { color: #fff; }
+				h2 span { padding-left: 0.5em; color: #fff; }
+			}
+		}
+	}
+
+	.content {
+
+		padding: 0 $border-size;
+		opacity: 0;
+
+		.contain {
+
+			margin: 0 auto;
+			max-width: 830px;
+		}
+
+		img {
+
+			margin: 0 auto 2em auto;
+		}
+
+		h2 {
+
+			@extend %type-texture-dark;
+		}
+
+		h5 {
+
+			text-align: center;
+		}
+	}
+
+	.note {
+
+		cursor: pointer;
+		
+		img {
+			
+			margin-left: 0;
+			margin-right: 0;
+			margin-top: 3em;
+		}
+	}
+}

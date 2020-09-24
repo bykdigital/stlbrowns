@@ -1,0 +1,27 @@
+
+<div class="content">
+
+	{{ #sections }}
+
+		<div class="section {{ #secondary }}section-secondary{{ /secondary }} {{ key }}">
+			<a href="{{ url }}">{{{ title }}}</a>
+		</div>
+
+	{{ /sections }}
+
+	<ul class="social">
+		
+		{{ #social }}
+
+			<li class="{{ key }}">
+				<a href="{{ url }}" target="_blank">
+					<img src="{{ config.cdn }}images/icn-{{ key }}.png" alt="St Louis Brows: {{ key }}" />
+					<img src="{{ config.cdn }}images/icn-{{ key }}-hover.png" alt="St Louis Brows: {{ key }}" />
+				</a>
+			</li>
+
+		{{ /social }}
+
+	</ul>
+	
+</div>

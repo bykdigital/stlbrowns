@@ -1,0 +1,75 @@
+
+
+
+/* //////////// */
+/* Blog page */
+
+.news-and-events-view {
+
+	.page-title {
+
+		background: url(#{$cdn}images/header/blog.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.content {
+
+		padding: 0;
+
+		@include media-query(medium) {
+
+			top: 135px;
+		}
+
+		@include media-query(large) {
+
+			top: 350px;
+		}
+	}
+
+	h2 {
+
+		text-align: left;
+	}
+
+	.post {
+
+		position: relative;
+		height: 230px;
+		overflow: hidden;
+		background: url(#{$cdn}images/bg-blog-post-border.jpg) repeat-x left bottom;
+
+		.image {
+			
+			position: relative;
+			max-width: 300px;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		article {
+
+			padding: 0 60px;
+
+			.date {
+
+				margin-bottom: 15px;
+				font-style: italic;
+			}
+
+			h2 {
+
+				margin-bottom: 15px;
+				line-height: 1.1;
+				padding-right: 70px;
+			}
+		}
+
+		.social {
+
+			@extend %vert-center;
+		}
+	}
+}

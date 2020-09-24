@@ -1,0 +1,48 @@
+- cdn = "https://msvcdotco.blob.core.windows.net/browns/"
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+
+		meta(name="description", content="Page description. No longer than 155 characters.")
+
+		//- Twitter Card data
+		meta(name="twitter:card" value="summary")
+
+		//- Open Graph data
+		meta(property="og:title", content="St. Louis Browns Historical Society")
+		meta(property="og:type", content="website")
+		meta(property="og:url", content="http://www.thestlbrowns.com/")
+		meta(property="og:image", content="http://www.thestlbrowns.com/og-image.jpg")
+		meta(property="og:description", content="The Home Of The St. Louis Browns Historical Society")
+
+		link(rel="shortcut icon", type="image/png", href="/images/favicon.ico")
+		// link(rel="dns-prefetch", href="cdn server path goes here")
+		link(rel="prefetch", href=(cdn + "images/bg-overlay.png"))
+
+		title St. Louis Browns Historical Society
+
+		link(rel="stylesheet", type="text/css", href="//cloud.typography.com/7547052/652786/css/fonts.css")
+		link(rel="stylesheet", href="/browns.min.css")
+
+	body
+		//- Google Tag Manager
+		noscript
+			iframe(src="//www.googletagmanager.com/ns.html?id=GTM-WXT8MP", height="0", width="0", style="display:none;visibility:hidden")
+		script.
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-WXT8MP');
+		//- End Google Tag Manager
+		.nav-controller.left
+			.logo
+			.text: a(href="/#/") St. Louis Browns
+				<span>Historical Society</span>
+		#stage
+			#image-store(style="display: none;")
+		script(src="/browns.min.js", type="text/javascript")

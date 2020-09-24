@@ -1,0 +1,41 @@
+<div class="page-title">
+	<h1>News &amp; Events</h1>
+</div>
+
+<div class="content">
+	
+	<div class="posts">
+		{{ #blog.posts }}
+
+			<div class="post grid grid-middle">
+				
+				{{ #images.news }}
+					<div class="image" style="background-image: url( '{{ . }}' );"></div>
+				{{ /images.news }}
+				<article>
+					<p class="date">{{ date }}</p>
+					<h2>{{ #trimmedTitle }}{{ title }}{{ /trimmedTitle }}</h2>
+					<a href="#/news-and-events/{{ slug }}" class="btn">Read More</a>
+				</article>
+
+				<div class="social">
+					<ul>
+						<li>
+							<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://www.thestlbrowns.com/%23/news-and-events/{{ slug }}&p[images][0]=/og-image.jpg&p[title]=The St. Louis Browns Historical Society&p[summary]={{ #trimmedTitle }}{{ title }}{{ /trimmedTitle }}" target="_blank" class="facebook">F</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/intent/tweet?text={{ #trimmedTitle }}{{ title }}{{ /trimmedTitle }}&url=http://www.thestlbrowns.com/%23/news-and-events/{{ slug }}" target="_blank" class="twitter">T</a>
+						</li>
+						<li>
+							<a href="mailto:?body=Here is a link to an article I found on the St. Louis Browns Historical Society website: http://www.thestlbrowns.com/%23/news-and-events/{{ slug }}&amp;subject=An article from the St. Louis Browns Historical Society" class="email">M</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+		{{ /blog.posts }}
+	</div>
+
+</div>
+

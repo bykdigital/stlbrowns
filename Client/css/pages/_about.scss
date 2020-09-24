@@ -1,0 +1,68 @@
+
+
+
+/* //////////// */
+/* About page */
+
+.about-view {
+
+	.page-title {
+
+		background: url(#{$cdn}images/header/about.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.next-section {
+
+		background: url(#{$cdn}images/bg/bg-about-next-section.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	.board {
+
+		.grid {
+
+			max-width: 750px;
+			margin: 60px auto 0 auto;
+
+			justify-content: space-between;
+			
+			> div {
+
+				max-width: 185px;
+			}
+
+			img {
+
+				margin: 0 auto 25px auto;
+			}
+
+			p {
+
+				font-size: 13px;
+				font-family: $brandon;
+			}
+		}
+	}
+
+	.hof {
+
+		margin: 120px auto 0 auto;
+		max-width: 905px;
+
+		.image {
+
+			max-width: 250px;
+		}
+
+		h2 { text-align: left; }
+	}
+
+	.bg {
+
+		bottom: auto;
+		top: 100px;
+		left: auto;
+		right: ($base-spacing-unit * -1);
+	}
+}

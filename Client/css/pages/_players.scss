@@ -1,0 +1,289 @@
+
+
+
+/* //////////// */
+/* Players page */
+
+.players-view {
+
+	/* counter-reset: players-counter; */
+
+	.page-title {
+
+		@media all and (max-height: 1000px) and (min-width: 1121px) {
+
+			padding: $base-spacing-unit 0;
+		}
+	}
+
+	.content {
+		
+		position: absolute;
+		top: 0;
+		z-index: 600;
+		width: 100%;
+		left: 0;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.scroll-bug {
+
+		z-index: 900;
+		left: 10%;
+		width: 105px;
+		@extend %vert-center;
+
+		h5 {
+
+			color: #635b54;
+			letter-spacing: 2px;
+			line-height: 2;
+			font-size: 10px;
+			margin-top: 1em;
+		}
+	}
+
+	.players-list-view {
+
+		padding: 0 5%;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		@include media-query(small) {
+			
+			padding: 0;
+			transform: translateY(-50%) scale(0.875);
+		}
+
+		@include media-query(medium) {
+
+			padding: 0;
+			transform: translateY(-50%) scale(0.875);
+		}
+	}
+
+	.players-list {
+
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		-o-column-count: 4;
+		column-count: 4;
+
+		-webkit-column-gap: 0;
+		-moz-column-gap: 0;
+		-o-column-gap: 0;
+		column-gap: 0;
+
+		list-style: none;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0;
+
+		li {
+
+			/* counter-increment: players-counter; */
+			margin-bottom: 7px;
+			white-space: nowrap;
+			padding-left: 5px;
+
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+			/* &:before {
+
+				content: counter(players-counter, decimal-leading-zero) ".";
+				display: inline-block;
+				width: 25px;
+				font-family: $brandon;
+				letter-spacing: 4px;
+				font-size: 10px;
+				margin-right: 25px;
+			} */
+
+			a {
+
+				font-style: normal;
+
+				// fixing odd hover issue in chrome?
+				span { position: relative; z-index: 1; }
+				&:before { z-index: 0; }
+			}
+		}
+	}
+
+	.players-photo-view {
+
+		height: 100%;
+		width: 100%;
+		@extend %vert-center;
+	}
+
+	.player-photos {
+
+		position: relative;
+		top: 0;
+		padding: 0;
+		left: 50%;
+		margin: 0 0 0 -300px;
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		display: flex;
+		height: 100%;
+
+		@include media-query(small) {
+
+			margin-left: -400px;
+		}
+
+		@include media-query(medium) {
+
+			margin-left: -400px;
+		}
+
+		li {
+			position: relative;
+			margin-left: -250px;
+			top: 0;
+			left: 0;
+			flex: 0 0 800px;
+			height: 100%;
+
+			&:first-child { margin-left: 0; }
+
+			.more-info {
+				
+				display: inline-block;
+				position: absolute;
+				bottom: 30%;
+				left: 20%;
+			}
+
+			> img {
+
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				margin: 0 auto;
+
+				@include media-query(small) {
+
+					max-height: 600px;
+				}
+
+				@include media-query(medium) {
+
+					max-height: 600px;
+				}
+			}
+			
+			h2 {
+
+				margin-bottom: 5px;
+				@extend %type-texture;
+				cursor: pointer;
+			}
+			
+			.badge {
+
+				margin-bottom: 20px;
+				display: inline-block;
+				margin-right: 10px;
+				vertical-align: bottom;
+			}
+
+			.btn { color: $dark-brown; }
+		}
+	}
+
+	.controls {
+
+		position: absolute;
+		z-index: 900;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 65px;
+		text-align: center;
+		background: url(#{$cdn}images/bg-players-controls.png) no-repeat center top;
+
+		li {
+			display: inline-block;
+			margin-top: 24px;
+			padding: 0 12px;
+			line-height: 1.25;
+			font-style: italic;
+			cursor: pointer;
+			transition: color .5s $easeOutQuint;
+
+			&.active {
+				color: $orange;
+			}
+
+			&:first-child {
+				border-right: 1px solid rgba(99, 91, 84, 0.45);
+			}
+		}
+	}
+
+	.alpha-controls {
+
+		position: absolute;
+		z-index: 500;
+		bottom: 61px;
+		left: 0;
+		width: 100%;
+
+		text-align: center;
+		font-family: $brandon-black;
+		font-size: 13px;
+		margin-bottom: 15px;
+
+		.grid {
+
+			margin: 0 auto;
+			max-width: 680px;
+			position: relative;
+
+			.indicator {
+
+				flex: none;
+				opacity: 1;
+
+				position: absolute;
+				bottom: -16px;
+				left: 9px;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+
+				border: 2px solid #514743;
+				background-color: #d8d4d2;
+			}
+
+			> div {
+
+				color: #beb4b0;
+				cursor: text;
+
+				transition: all .5s $easeInOutCubic;
+
+				&.selected {
+					cursor: pointer;
+					color: #938985;
+				}
+
+				&.active {
+
+					color: #514743;
+				}
+			}
+		}
+	}
+}

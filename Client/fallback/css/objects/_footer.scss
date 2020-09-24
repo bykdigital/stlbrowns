@@ -1,0 +1,38 @@
+
+
+
+/* //////////// */
+/* Footer object */
+
+.footer {
+	
+	background-color: #382826;
+	text-align: center;
+	color: #fff;
+	padding: 25px 0;
+
+	ul {
+
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-family: $brandon-black;
+		text-transform: uppercase;
+		font-size: 12px;
+		line-height: 1em;
+		@extend %type-texture;
+
+		> li {
+
+			display: inline-block;
+			margin: 0 3%;
+			letter-spacing: 1px;
+
+			a.active,
+			a:hover {
+				
+				color: $orange;
+			}
+		}
+	}
+}

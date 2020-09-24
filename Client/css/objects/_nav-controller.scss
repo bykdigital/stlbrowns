@@ -1,0 +1,200 @@
+
+
+
+/* //////////// */
+/* Nav controller */
+
+.nav-controller {
+
+	position: fixed;
+	z-index: 1000;
+	top: 40px;
+	right: 40px;
+
+	width: 100px;
+	height: 34px;
+	line-height: 27px;
+	color: #fff;
+	font-family: $futura-bold;
+	text-transform: uppercase;
+	overflow: visible;
+	transition: all .5s $easeOutCubic;
+	cursor: pointer;
+	text-align: right;
+
+	&.dark {
+		color: $dark-brown;
+
+		.icon {
+			border-color: $dark-brown;
+
+			span div {
+				background-color: $dark-brown !important;
+			}
+
+			span.ball {
+				background: url(#{$cdn}images/bg-nav-icon-1-dark.png) no-repeat center;
+			}
+		}
+	}
+
+	&.left {
+
+		right: auto;
+		left: 40px;
+		text-align: left;
+		width: 217px;
+	}
+
+	.icon {
+
+		position: absolute;
+		top: 4px;
+		right: 4px;
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		border: 2px solid #fff;
+		overflow: hidden;
+		transition: all .25s $easeOutCubic;
+
+		@extend %type-texture;
+
+		span {
+
+			display: block;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			transition: all .25s $easeOutCubic;
+
+			&.ball {
+				background: url(#{$cdn}images/bg-nav-icon-1.png) no-repeat center;
+				transform: scale(0);
+			}
+
+			&.bars {
+
+				position: absolute;
+				width: 10px;
+				height: 12px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				div {
+					position: relative;
+					background-color: #fff;
+					width: 10px;
+					height: 2px;
+					margin-top: 2px;
+					left: 50%;
+					transform: translateX(-50%);
+
+					&:first-child {
+						margin-top: 1px;
+					}
+				}
+			}
+
+			&.close {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: scale(0);
+
+				div {
+					position: absolute;
+					top: 11px;
+					left: 6px;
+					width: 12px;
+					height: 2px;
+					background-color: #fff;
+
+					&:first-child { transform: rotate(-45deg); }
+					&:last-child { transform: rotate(45deg); }
+				}
+			}
+		}
+	}
+
+	&:hover .icon {
+		
+		transform: scale(1.075);
+
+		.ball {
+			transform: scale(1);
+		}
+
+		.bars {
+			transform: translate(-50%, -50%) scale(0);
+		}
+	}
+
+	&.active .icon {
+		
+		transform: scale(1.075);
+
+		.ball {
+			transform: scale(1.5);
+			opacity: 0;
+		}
+
+		.bars {
+			transform: translate(-50%, -50%) scale(0);
+		}
+
+		.close {
+			transform: scale(1);
+		}
+	}
+
+	.logo {
+
+		position: relative;
+		top: -15px;
+		width: 38px;
+		height: 66.5px;
+
+		background: url(#{$cdn}images/icn-nav.png) no-repeat center;
+		background-size: cover;
+
+		transition: all .25s $easeOutCubic;
+	}
+
+	&.dark .logo {
+
+		background: url(#{$cdn}images/icn-nav-dark.png) no-repeat center;
+		background-size: cover;
+	}
+
+	.text {
+
+		position: absolute;
+		top: 0;
+		right: 42px;
+		height: 100%;
+		line-height: 37px;
+		letter-spacing: 1px;
+
+		@extend %type-texture;
+
+		span {
+			display: block;
+			font-size: 8px;
+		}
+	}
+
+	&.left .text {
+
+		right: auto;
+		left: 50px;
+		width: 175px;
+		height: 100%;
+		line-height: 1;
+		letter-spacing: 1px;
+		padding-top: 12px;
+	}
+}

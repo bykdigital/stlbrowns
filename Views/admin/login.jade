@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	form(action="/admin/login", method="post")
+		label Username
+		input.form-control(type="text", name="username")
+		label Password
+		input.form-control(type="password", name="password")
+		br
+		input.btn.btn-default(type="submit", value="Log Me In!")

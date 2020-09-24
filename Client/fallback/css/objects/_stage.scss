@@ -1,0 +1,16 @@
+
+
+
+/* //////////// */
+/* Stage object */
+
+.stage {
+
+	padding: ($base-spacing-unit * 1.5) 0;
+	background: url(#{$cdn}fallback/bg-texture-main.jpg) repeat left top;
+
+	&.contact {
+
+		background: url(#{$cdn}fallback/bg-texture-dark.jpg) repeat left top;
+	}
+}

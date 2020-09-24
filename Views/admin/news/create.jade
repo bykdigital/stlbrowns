@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+	h1 Create post
+	hr
+	form(role="form", method="post", action="/api/news/create")
+		.form-group
+			input.form-control.input-lg(type="text", placeholder="Title", name="title")
+		
+		.form-group
+			label State
+			select.form-control(name="state")
+				option(value="draft") Draft
+				option(value="published") Published
+				option(value="archived") Archived
+		
+		.form-group
+			label Date
+			input.form-control(type="date", placeholder="Post Date", name="date")
+		
+		.form-group
+			label Image
+			input.btn.btn-default(type="file", placeholder="Post Image", name="image", id="image")
+			br
+			div.well.well-sm
+				div#status
+				div#preview
+				div#avatar_url
+		
+		.form-group
+			label Content
+			textarea.form-control(placeholder="Post Content", name="content", rows="15")
+		button.btn.btn-primary(type="submit") Save

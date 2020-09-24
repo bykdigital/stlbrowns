@@ -1,0 +1,62 @@
+{
+  "name": "the-st-louis-browns-historical-society",
+  "version": "1.0.0",
+  "description": "The internet home of the St. Louis Browns",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon --watch server.js server.js dev 8000",
+    "watch": "gulp",
+    "watchjs": "watchify Client/js/main.js -o Public/browns.min.js -v -t brfs",
+    "bundle": "node Bundler Public/images",
+    "push": "sh push.sh",
+    "compress": "gulp compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Jacob Fisher, HLK",
+  "license": "ISC",
+  "devDependencies": {
+    "bonzo": ">=2.0.0",
+    "brfs": ">=1.4.1",
+    "browserify": ">=11.2.0",
+    "dom-event": ">=0.0.5",
+    "dom-select": ">=0.0.0",
+    "gulp": ">=3.9.0",
+    "gulp-imagemin": ">=2.3.0",
+    "gulp-minify-css": ">=1.2.1",
+    "gulp-pleeease": ">=2.0.1",
+    "gulp-rename": ">=1.2.2",
+    "gulp-sass": ">=2.0.5",
+    "gulp-sourcemaps": ">=1.6.0",
+    "gulp-uglify": ">=1.4.2",
+    "gulp-util": ">=3.0.7",
+    "gulp-watch": ">=4.3.5",
+    "imagemin-pngquant": ">=4.2.0",
+    "mustache": ">=2.2.0",
+    "qwery": ">=4.0.0",
+    "raf-loop": ">=1.1.3",
+    "routes": ">=2.1.0",
+    "underscore": ">=1.8.3",
+    "velocity-animate": ">=1.2.3",
+    "vinyl-buffer": ">=1.0.0",
+    "vinyl-source-stream": ">=1.1.0",
+    "watchify": ">=3.4.0",
+    "underscore.string": ">=3.2.2"
+  },
+  "dependencies": {
+    "body-parser": ">=1.14.1",
+    "compression": ">=1.6.0",
+    "express": ">=4.13.3",
+    "jade": ">=1.11.0",
+    "mime": "~1.2.7",
+    "moment": ">=2.10.6",
+    "mongoose": ">=4.1.12",
+    "nodemailer": ">=1.8.0",
+    "nodemailer-wellknown": ">=0.1.7",
+    "nodemon": ">=1.7.3",
+    "serve-static": ">=1.10.0"
+  }
+}

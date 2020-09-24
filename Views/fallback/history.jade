@@ -1,0 +1,60 @@
+
+extends ./layout.jade
+
+block content
+	.contain
+		.callout
+			h5 Note
+			p For a full experience, please visit this website on a desktop browser.
+
+	.contain
+		h5 History
+		p.lead 41 losing seasons in 52 years. A whiff of a World Series. Misfits, a midget, and money problems. The Browns are baseball&rsquo;s losingest and least remembered team. But beneath the tarnish is true baseball gold. Heroes of the greatest generation. Moments of grit, guts and glory. A roller coaster of ruin and redemption. The Browns&rsquo; books have long been closed, but the legend of baseball&rsquo;s most colorful underdogs deserves to endure forever. Please visit our site on a desktop or tablet for the full History experience.
+
+	img(src=(cdn + 'fallback/img-history-1.jpg'), class="img-center")
+
+	.contain
+		h5 The Early Years
+		p In 1902, the Milwaukee Brewers moved to St. Louis with carriage-maker Robert Lee Hedges as the new owner. The club, a member of the American League, joined the National League&rsquo;s Cardinals to become the town&rsquo;s second (and soon favorite) baseball team. Hedges pinched several of the Redbirds&rsquo; notable players and rebuilt Sportsman&rsquo;s Park, their former home. With this, the Browns&rsquo; legacy — and a hometown rivalry — began.
+		p The Browns&rsquo; early years were rocky. They ended 1902 in second place with a 78-58 record. They lost nearly 100 games in 1905. In 1908, they climbed out of a slump to finish fourth in the league.
+		p In 1915, manager Branch Rickey signed George Sisler to the Browns. Sisler would later become the only Hall of Famer in history to be inducted as a Browns player. In 1919, Browns owner Philip Ball committed an irreversible blunder — he fired Branch Rickey, who subsequently turned the Cardinals into one of baseball&rsquo;s premier teams, and later made history by signing Jackie Robinson to the Brooklyn Dodgers.
+		p In 1922, the Browns caught on fire. Outfielders Ken Williams, Baby Doll Jacobson and Jack Tobin all hit .300 or better, for the fourth season in a row. Williams became the founding member of the 30/30 Club — and the only member until 1956. George Sisler earned the league&rsquo;s first-ever MVP award. And with their best-ever 93-61 record, the Browns finished the season 1 win short of tying the Yankees for the pennant.
+
+	img(src=(cdn + 'fallback/img-history-2.jpg'), class="img-center")
+
+	.contain
+		h5 The Bottom Dwellers
+		p In the 1926 World Series, the Cardinals (now sharing Sportsman&rsquo;s Park) beat the Yankees, and won back the hearts of local fans. The fanbase coup was just the beginning. After a string of years with 90+ losses, the Browns faced a catch-22: They needed good players to attract a crowd, but they needed a crowd to afford good players.
+		p The Browns woefully attained their worst single-season attendance record in 1935. This record still stands as a major league low. Their all-time worst record (43-111) would come in 1939.
+
+	img(src=(cdn + 'fallback/img-history-3.jpg'), class="img-center")
+	
+	.contain
+		h5 The War Years
+		p When the U.S. entered World War II, President Roosevelt gave the &ldquo;green light&rdquo; to keep playing. New manager Luke Sewell got surgical with his 1942 roster, and rebuilt the team. The Browns lost a few men to the war effort, but other teams said goodbye to key players. By 1944, every Browns infielder was classified 4-F, or excused from military service, many for physical limitations. The Browns cashed in on their odds, opening the season with a bang — nine straight wins.
+		p Cut to October 1, 1944, the last regular-season game. The pennant was at stake. No player on the Browns roster had ever made it to a World Series. The Browns led the visiting Yankees 5-2 into the ninth. Down to the final out, Oscar Grimes shot a high fly ball into foul territory. Browns first baseman George McQuinn nabbed it. Pandemonium ensued. The Browns were going to the World Series to face the Cardinals.
+		p Thus began the Streetcar Series, called such because St. Louis had so many trolleys at the time. Both teams would have the home field advantage — the Cards for the first two and last two games; the Browns for the three in the middle. With a 3-1 Game 6 loss, the Browns said goodbye to their &ldquo;Cinderella season&rdquo; and World Series hopes. After World War II, the rest of the league&rsquo;s talent was replenished. The Browns&rsquo; best years were put behind them as they returned to last place.
+
+	img(src=(cdn + 'fallback/img-history-4.jpg'), class="img-center")
+	
+	.contain
+		h5 The Bill Veeck Era
+		p Bill Veeck became the owner in 1951, bringing with him a radical approach to promotions — or, as he saw it, creative ways to attract a crowd and stir up drama with the Cardinals. Veeck brought three former Cardinals over to the Browns: Rogers Hornsby and Marty Marion as coaches, and Dizzy Dean as announcer. He also decorated Sportsman&rsquo;s Park solely with Browns memorabilia.
+		p For his first game as owner, Bill Veeck gave everyone in the ballpark a free beer or soda. On August 19, 1951, Veeck sent Eddie Gaedel up to pinch hit, standing 3-foot-7 with an impossible strike zone. Gaedel drew four straight balls in his only at-bat. His 1.000 career on base percentage remains in tact.
+		p In 1953, August Busch, Jr., owner of Anheuser-Busch, bought the Birds. Veeck was no match for the financial, political and social power of the Busch family. Out of options, Veeck sold Sportsman&rsquo;s Park to August Busch, Jr., for $800,000. Unable to relocate the Browns, Veeck sold the team to a Baltimore attorney and baseball-lover, Clarence Miles.
+		p The Browns played their last game in St. Louis on September 27, 1953, against the White Sox in front of a crowd of 3,174. The White Sox won, 2-1.
+		p In 1954, the Browns became the Baltimore Orioles.
+
+	.form
+		.contain
+			h2.textured Become A Member
+			form#member(novalidate)
+				.form-group(data-required)
+					input(id="name", name="name", type="text", placeholder="Your Name")
+				.form-group(data-required)
+					input(id="email", name="email", type="email", placeholder="Email Address")
+				.form-group(data-required)
+					input(id="phone", name="phone", type="text", placeholder="Phone Number")
+				.form-group.error
+					p All fields are required.
+				button(type="submit", class="submit") Submit membership request

@@ -1,0 +1,42 @@
+
+
+
+/* //////////// */
+/* Footer object */
+
+.generic-view footer {
+
+	padding: 35px $base-spacing-unit 40px $base-spacing-unit;
+	margin: 0 ($base-spacing-unit * -1) 0 ($base-spacing-unit * -1);
+	background: url(#{$cdn}images/bg-border-h.jpg) repeat-x top left;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: $brandon-black;
+	font-size: 13px;
+	letter-spacing: 2px;
+
+	&:after {
+
+		content: "";
+		display: block;
+		width: 100%;
+		height: 0;
+		clear: both;
+	}
+
+	.inner {
+
+		max-width: 1160px;
+		margin: 0 auto;
+	}
+
+	.grid > div {
+
+		flex: auto 1 1;
+	}
+
+	.logo {
+
+		width: 350px;
+	}
+}

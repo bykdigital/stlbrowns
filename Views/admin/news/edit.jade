@@ -1,0 +1,39 @@
+extends ../layout
+
+block content
+	h1 Edit post
+	hr
+	form(role="form", method="post", action="/api/news/update")
+		input(type="hidden", value="#{post.id}", name="postID")
+
+		.form-group
+			input.form-control.input-lg(type="text", placeholder="Title", name="title", value="#{post.title}")
+		
+		.form-group
+			label State
+			select.form-control(name="state", value="#{post.state}")
+				option(value="draft", selected=(post.state == 'draft' ? true : false)) Draft
+				option(value="published", selected=(post.state == 'published' ? true : false)) Published
+				option(value="archived", selected=(post.state == 'archived' ? true : false)) Archived
+		
+		.form-group
+			label Date
+			input.form-control(type="date", placeholder="Post Date", name="date", value=moment(post.date).format('YYYY-MM-DD'))
+		
+		.form-group
+			label Image
+			input.btn.btn-default(type="file", placeholder="Post Image", name="image", id="image", value=post.image)
+			br
+			if ( post.image )
+				div.well.well-sm
+					div#status= post.image
+					div#preview: img.img-thumbnail(src="/images/news/upload/" + post.image, style="max-width: 250px;")
+					div#avatar_url
+		
+		.form-group
+			label Content
+			textarea.form-control(name="content", rows="15")= post.content
+
+		
+		button.btn.btn-primary(type="submit") Save
+		a.btn.btn-link(href="/admin/news") Cancel

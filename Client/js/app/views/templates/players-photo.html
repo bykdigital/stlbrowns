@@ -1,0 +1,49 @@
+<ol class="player-photos">
+	{{ #players }}
+		<li {{ #category }} data-category="{{ category }}" {{ /category }}>
+			<img src="{{ config.cdn }}images/players/{{ key }}.png" alt="{{ name }}" class="player" />
+			<div class="more-info">
+				{{ #hallOfFame }}
+					<img src="{{ config.cdn }}images/hof-badge.png" alt="" class="badge" />
+				{{ /hallOfFame }}
+				{{ #cardinalsPlayer }}
+					<img src="{{ config.cdn }}images/cards-badge.png" alt="" class="badge" />
+				{{ /cardinalsPlayer }}
+				<h2 class="info" data-href="{{ key }}">{{{ firstName }}} {{{ lastName }}}</h2>
+				<a href="#" data-href="{{ key }}" class="btn info">More Info</a>
+			</div>
+		</li>
+	{{ /players }}
+</ol>
+
+<div class="alpha-controls">
+	<div class="grid">
+		<div class="indicator"></div>
+		<div data-category="a" class="active">A</div>
+		<div data-category="b">B</div>
+		<div data-category="c">C</div>
+		<div data-category="d">D</div>
+		<div data-category="e">E</div>
+		<div data-category="f">F</div>
+		<div data-category="g">G</div>
+		<div data-category="h">H</div>
+		<div data-category="i">I</div>
+		<div data-category="j">J</div>
+		<div data-category="k">K</div>
+		<div data-category="l">L</div>
+		<div data-category="m">M</div>
+		<div data-category="n">N</div>
+		<div data-category="o">O</div>
+		<div data-category="p">P</div>
+		<div data-category="q">Q</div>
+		<div data-category="r">R</div>
+		<div data-category="s">S</div>
+		<div data-category="t">T</div>
+		<div data-category="u">U</div>
+		<div data-category="v">V</div>
+		<div data-category="w">W</div>
+		<div data-category="x">X</div>
+		<div data-category="y">Y</div>
+		<div data-category="z">Z</div>
+	</div>
+</div>

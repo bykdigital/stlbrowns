@@ -1,0 +1,46 @@
+<div class="page-title">
+	<h1>News &amp; Events</h1>
+</div>
+
+<div class="post">
+
+	<div class="inner">
+		
+		<div class="social">
+			<ul>
+				<li>
+					<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://www.thestlbrowns.com/%23/news-and-events/{{ slug }}&p[images][0]=/og-image.jpg&p[title]=The St. Louis Browns Historical Society&p[summary]=The St. Louis Browns Historical Society and Fan Club is dedicated to preserving every stat and story, so the legend of baseball's most colorful underdogs can endure forever." target="_blank" class="facebook">F</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/intent/tweet?text=The St. Louis Browns Historical Society and Fan Club is dedicated to preserving every stat and story, so the legend of baseball's most colorful underdogs can endure forever.&url=http://www.thestlbrowns.com/%23/news-and-events/{{ slug }}" target="_blank" class="twitter">T</a>
+				</li>
+				<li>
+					<a href="mailto:?body=Here is a link to an article I found on the St. Louis Browns Historical Society website: http://www.thestlbrowns.com/%23/news-and-events/{{ slug }}&amp;subject=An article from the St. Louis Browns Historical Society" class="email">M</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="post-body">
+			
+			<p class="date">{{ date }}</p>
+			<h2>{{ title }}</h2>
+			<p class="lead">{{{ excerpt }}}</p>
+
+			{{ #images.article }}
+			<div class="post-image">
+				<img src="{{ . }}" alt="" />
+			</div>
+			{{ /images.article }}
+
+			{{{ body }}}
+	
+			<hr />
+			<p>
+				<a href="#/news-and-events">&larr; Back to all posts</a>
+			</p>
+			
+		</div>
+
+	</div>
+
+</div>

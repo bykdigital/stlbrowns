@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+	h1 Edit player
+	hr
+	form(role="form", method="post", action="/api/players/update")
+		.form-group
+			input(type="hidden", value="#{player.id}", name="playerID")
+			label Player Name
+			input.form-control(type="text", value="#{player.name}", name="name")
+		button.btn.btn-primary(type="submit") Save
+		a.btn.btn-link(href="/admin/players") Cancel

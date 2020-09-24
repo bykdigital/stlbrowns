@@ -1,0 +1,63 @@
+
+
+
+/* //////////// */
+/* Lists */
+
+ul, ol {
+
+	&.bulleted {
+		
+		margin-left: 1.6em;
+		margin-bottom: 1em;
+	}
+}
+
+.image-list {
+
+	text-align: center;
+
+	.image {
+		display: inline-table;
+		margin: 1em;
+		padding: 1em;
+		background: #fff;
+
+		&.noframe {
+			padding: 0;
+			background: none transparent;
+		}
+
+		&.left {
+			float: left;
+			margin-top: 0;
+			margin-left: 0;
+		}
+
+		&.right {
+			float: right;
+			margin-top: 0;
+			margin-right: 0;
+		}
+	}
+
+	.caption {
+		display: table-caption;
+		caption-side: bottom;
+		font-size: 80%;
+		line-height: 1.4em;
+		padding: 1em 1em 0;
+
+		&.medium {
+			font-size: 120%;
+			font-weight: 700;
+			padding-top: .5em;
+		}
+
+		&.large {
+			font-size: 150%;
+			font-weight: 700;
+			padding-top: .5em;
+		}
+	}
+}

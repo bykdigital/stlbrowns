@@ -1,0 +1,32 @@
+
+extends ./layout.jade
+
+block content
+	.contain
+		h5 Overview
+		p.lead The St. Louis Browns Historical Society and Fan Club is dedicated to preserving every stat and story, so the legend of baseball’s most colorful underdogs can endure forever.
+	
+	img(src=(cdn + 'fallback/about-img-1.jpg'), class="full-bleed")
+
+	img(src=(cdn + 'fallback/about-img-quote.png'), class="full-bleed")
+	p.attr Ned Garver, Browns Pitcher
+
+	img(src=(cdn + 'fallback/about-img-2.jpg'), class="full-bleed")
+	
+	.contain.soft-bottom
+		h5 Member Pledge
+		p.lead As a member of the St. Louis Browns Fan Club, I pledge to protect, preserve and promote the St. Louis Browns. I accept the duty to defend the honor of the Browns wherever it may be maligned and tell Browns stories wherever and whenever I can. I will exercise careful stewardship over Browns artifacts and memorabilia. I gladly accept the duty of preventing our Browns from ever becoming forgotten by future generations of baseball fans.
+
+	.form
+		.contain
+			h2.textured Become A Member
+			form#member(novalidate)
+				.form-group(data-required)
+					input(id="name", name="name", type="text", placeholder="Your Name")
+				.form-group(data-required)
+					input(id="email", name="email", type="email", placeholder="Email Address")
+				.form-group(data-required)
+					input(id="phone", name="phone", type="text", placeholder="Phone Number")
+				.form-group.error
+					p All fields are required.
+				button(type="submit", class="submit") Submit membership request

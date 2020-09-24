@@ -1,0 +1,29 @@
+
+<div class="page-title">
+	<h1>{{ title }}</h1>
+</div>
+
+<div class="scroll-bug">
+	<div><img src="{{ config.cdn }}images/bg/icn-right-arrow.png" alt="" /></div>
+	<h5>Scroll to explore the chapters</h5>
+</div>
+
+<div class="content">
+	
+	<div class="inner">
+		<ul class="history-sections">
+			{{ #sections }}
+				<li>
+					<a href="/#/history/{{ key }}">
+						<img src="{{ config.cdn }}images/fpo/{{ overviewImage }}" alt="" />
+					</a>	
+				</li>
+			{{ /sections }}
+		</ul>
+	</div>
+
+</div>
+
+<div class="title">
+	<p><span>Chapter 1:</span> <a href="/#/history" class="btn">The Early Years</a></p>
+</div>

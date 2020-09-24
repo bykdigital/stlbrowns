@@ -1,0 +1,50 @@
+
+
+
+/* //////////// */
+/* About page */
+
+.contact-view {
+
+	h2 {
+
+		text-align: left;
+	}
+
+	.page-title {
+
+		background: url(#{$cdn}images/header/contact.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	footer {
+
+		margin: 130px ($base-spacing-unit * -1) 0 ($base-spacing-unit * -1);
+	}
+
+	.content {
+
+		padding-top: 110px;
+	}
+
+	.inner {
+
+		max-width: 975px;
+		margin: 0 auto;
+	}
+
+	form {
+
+		@include media-query(large) { margin-left: $base-spacing-unit; }
+	}
+
+	input, textarea {
+
+		color: $base-text-color;
+	}
+
+	::-webkit-input-placeholder { color: $base-text-color; }
+	:-moz-placeholder { color: $base-text-color; }
+	::-moz-placeholder { color: $base-text-color; }
+	:-ms-input-placeholder { color: $base-text-color; }
+}

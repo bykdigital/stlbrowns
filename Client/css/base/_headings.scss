@@ -1,0 +1,76 @@
+
+
+
+/* //////////// */
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+
+	font-family: $futura-bold;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	margin-bottom: .25em;
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+h1 {
+
+	font-size: 2.8125em;
+	letter-spacing: 11px;
+}
+
+h2 {
+
+	font-size: 24px;
+	margin-bottom: 1em;
+	color: #281d19;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+	font-family: $brandon-black;
+	font-size: 8px;
+	letter-spacing: .675em;
+}
+
+h6 {
+	
+	font-size: 1.0666666667em;
+	font-family: $sentinel;
+	font-weight: 700;
+	text-transform: none;
+	letter-spacing: -0.5px;
+	margin-bottom: .5em;
+}
+
+.lead,
+.intro p {
+
+	color: $orange;
+	font-size: 1.2em;
+	text-align: center;
+	max-width: 730px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include media-query(large) {
+	
+		font-size: 1.4666666667em;		
+	}
+}
+
+.legal {
+
+	font-family: $brandon;
+	font-size: 13px;
+	text-align: center;
+}

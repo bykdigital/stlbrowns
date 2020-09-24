@@ -1,0 +1,51 @@
+<div class="align">
+
+	<div class="inner">
+
+		<div class="close">&times;</div>
+
+		<h2>{{{ firstName }}} {{{ lastName }}}</h2>
+		{{{ bio }}}
+
+		<hr />
+
+		<div class="stats grid">
+
+			<div>
+				<h5>Position</h5>
+				<p>{{ details.position }}</p>
+			</div>
+			<div>
+				<h5>Bats</h5>
+				<p>{{ details.bats }}</p>
+			</div>
+			<div>
+				<h5>Throws</h5>
+				<p>{{ details.arm }}</p>
+			</div>
+			<div>
+				<h5>Height</h5>
+				<p>{{ details.height.feet }}&rsquo; {{ details.height.inches }}&rdquo;</p>
+			</div>
+			<div>
+				<h5>Weight</h5>
+				<p>{{ details.weight }}</p>
+			</div>
+			<div>
+				<h5>Hometown</h5>
+				<p>{{ details.city }}</p>
+			</div>
+			<div>
+				<h5>Born</h5>
+				<p>{{ details.born.month }}/{{ details.born.day }}/{{ details.born.year }}</p>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="url">
+		<a href="{{ url }}" target="_blank">More Stats &rarr;</a>
+	</div>
+
+</div>

@@ -1,0 +1,222 @@
+
+
+
+/* //////////// */
+/* History section page */
+/* The Bill Veeck Erc */
+
+.history-section-view.the-bill-veeck-era {
+
+
+	.grid-middle  {
+		> div {
+			display: block;
+		}
+		@media all and (max-width: 600px) {
+			display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;
+			> div {
+				-webkit-box-flex: 1;-webkit-flex: 1 1 50%;-ms-flex: 1 1 50%;flex: 1 1 50%
+			}
+		}
+	}
+
+	section {
+
+		background-size: cover;
+		background-position: top-center;
+		background-repeat: no-repeat;
+	}
+
+	h5, img.big-stuff {
+
+		margin-bottom: 85px;
+	}
+
+	img.big-stuff { max-width: 85%; }
+
+	.next-section {
+
+		background-image: url(#{$cdn}images/history/bg-next-section.jpg);
+	}
+
+	.dewitt-brothers {
+
+		height: 1408px;
+		padding-top: 225px;
+		background-image: url(#{$cdn}images/history/the-veeck-era/bg-section-dewitt-brothers.jpg);
+
+		.section-1 {
+
+			margin-bottom: 370px;
+			max-width: 650px;
+
+			p {
+
+				max-width: 560px;
+			}
+		}
+	}
+
+	.veeck-background {
+
+		height: 3437px;
+		padding-top: 315px;
+		background-image: url(#{$cdn}images/history/the-veeck-era/bg-section-veeck-background.jpg);
+
+		.attr {
+
+			text-align: right;
+			font-style: italic;
+			padding-right: 30px;
+		}
+
+		.section-1 {
+
+			margin-bottom: 490px;
+
+			img { margin-bottom: 50px; }
+		}
+
+		.section-2 {
+
+			margin-bottom: 375px;
+			max-width: 600px;
+			position: relative;
+
+			p { max-width: 570px; }
+		}
+
+		.section-3 {
+
+			margin-bottom: 335px;
+		}
+
+		.section-4 {
+
+			max-width: 1013px;
+		}
+	}
+
+	.free-beer {
+
+		height: 2222px;
+		padding-top: 315px;
+		background-image: url(#{$cdn}images/history/the-veeck-era/bg-section-free-beer.jpg);
+
+		.section-1 {
+
+			margin-bottom: 415px;
+			max-width: 650px;
+
+			p { max-width: 540px; }
+		}
+
+		.section-2 {
+
+			margin-bottom: 355px;
+			max-width: 915px;
+
+			.image {
+
+				max-width: 350px;
+			}
+		}
+
+		.section-3 {
+
+			text-align: center;
+		}
+	}
+
+	.dreamers {
+
+		height: 1747px;
+		padding-top: 315px;
+		background-image: url(#{$cdn}images/history/the-veeck-era/bg-section-dreamers.jpg);
+
+		.attr {
+
+			text-align: right;
+			font-style: italic;
+			padding-right: 30px;
+		}
+
+		.section-1 {
+
+			margin-bottom: 320px;
+			max-width: 1019px;
+		}
+
+		.section-2 {
+
+			max-width: 950px;
+
+			.image {
+
+				max-width: 391px;
+			}
+		}
+	}
+
+	.california {
+
+		height: 2944px;
+		padding-top: 300px;
+		background-image: url(#{$cdn}images/history/the-veeck-era/bg-section-california.jpg);
+
+		.section-1 {
+
+			max-width: 700px;
+			margin-bottom: 385px;
+
+			p {
+
+				max-width: 550px;
+			}
+		}
+
+		.section-2 {
+
+			max-width: 875px;
+			margin-bottom: 350px;
+
+			.image {
+
+				max-width: 300px;
+			}
+		}
+
+		.section-3 {
+
+			margin-bottom: 485px;
+			text-align: center;
+
+			.attr {
+
+				font-style: italic;
+			}
+		}
+
+		.section-4 {
+
+			max-width: 600px;
+
+			p {
+
+				max-width: 460px;
+			}
+		}
+	}
+
+	.final {
+
+		height: 1339px;
+		padding-top: 300px;
+		background-image: url(#{$cdn}images/history/the-veeck-era/bg-section-final.jpg);
+
+		.contain {
+
+			max-width: 744px;
+		}
+	}
+}

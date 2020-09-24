@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+	h1= section
+		a.btn.btn-primary.pull-right(href="/admin/news/create").
+			<span class="glyphicon glyphicon-plus"></span> Create Post
+	h3 #{posts.length} Entries
+	hr
+	each post in posts
+		div: ul.list-group
+			li.list-group-item
+				strong #{post.title}: #{post.id}
+				.btn-group.pull-right
+					a.btn.btn-default.btn-xs(href="/admin/news/edit/#{post.id}").
+						<span class="glyphicon glyphicon-pencil"></span> edit
+					a.btn.btn-default.btn-xs(href="/api/news/delete/#{post.id}").
+						<span class="glyphicon glyphicon-trash"></span> delete
+			li.list-group-item Created: #{post.date}

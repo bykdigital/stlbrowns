@@ -1,0 +1,33 @@
+
+
+
+/* //////////// */
+/* Carousel object */
+
+.carousel {
+
+	overflow: hidden;
+	position: relative;
+
+	.arrow-right, .arrow-left {
+
+		position: absolute;
+		z-index: 200;
+		cursor: pointer;
+		transition: all 0.35s $easeInOutCubic;
+
+		img { margin: 0 !important; }
+	}
+
+	.slides {
+
+		display: flex;
+		position: relative;
+		z-index: 100;
+
+		.slide {
+
+			flex: 0 0 100%;
+		}
+	}
+}
