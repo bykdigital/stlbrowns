@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'thestlbrowns'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_112dcba2231841be8c0debcc5f58acd7 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_84391728a113479b8de3c82943d66045 }}
         package: .
