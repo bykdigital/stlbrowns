@@ -1,5 +1,5 @@
-# Plain Node.js on Linux Web App
-# Build a plain Node.js project and deploy it to Azure as a Linux web app.
+# Node.js with gulp on Linux Web App
+# Build a Node.js project using the gulp task runner and deploy it to Azure as a Linux web app.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 
 on:
@@ -7,7 +7,7 @@ on:
     branches:
       - master
 
-name: Build and deploy Plain Node.js on Linux Web App
+name: Build and deploy Node.js with Gulp on Linux Web App
 
 jobs:
   build-and-deploy:
@@ -26,12 +26,11 @@ jobs:
         node-version: 14.x
 
     # install dependencies, build, and test
-    - name: npm install, build, and test
+    - name: npm install, build
       working-directory: .
       run: |
         npm install
-        npm run build --if-present
-        npm run test --if-present
+        gulp default --gulpfile gulpfile.js
 
     - uses: azure/appservice-settings@v1
       with:
