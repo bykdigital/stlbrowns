@@ -11,7 +11,7 @@ name: Build and deploy Node.js with Gulp on Linux Web App
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-lucid
     steps:
     # checkout the repo
     - uses: actions/checkout@master
@@ -23,7 +23,7 @@ jobs:
 
     - uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: 8.16.2
 
     # install dependencies, build, and test
     - name: npm install, build
